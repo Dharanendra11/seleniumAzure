@@ -35,6 +35,7 @@ public class pipeline {
 	public void test() {
 		Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"homepage-header\"]/div/div[2]/a/span[1]")).isDisplayed());
 		System.out.println("After Assert");
+		driver.findElement(By.xpath("//*[@id=\"homepage-header\"]/div/div[2]/a/span[1]")).click();
 	}
 
 }
