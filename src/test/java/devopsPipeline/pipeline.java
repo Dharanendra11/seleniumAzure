@@ -32,10 +32,12 @@ public class pipeline {
 	}
 
 	@Test
-	public void test() {
+	public void test() throws Exception {
 		Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"homepage-header\"]/div/div[2]/a/span[1]")).isDisplayed());
 		System.out.println("After Assert");
 		driver.findElement(By.xpath("//*[@id=\"homepage-header\"]/div/div[2]/a/span[1]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("/html/body/material-docs-app/app-navbar/nav[1]/a[2]")).click();
 	}
 
 }
