@@ -24,6 +24,7 @@ public class pipeline {
 		driver= new ChromeDriver();
 		driver.get("https://material.angular.io/");
 		driver.manage().window().maximize();
+		System.out.println("Website Opened");
 	}
 
 	@After
