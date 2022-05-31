@@ -25,6 +25,7 @@ public class pipeline {
 		driver.get("https://material.angular.io/");
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
+		System.out.println("Website is opened successfully");
 	}
 
 	@After
